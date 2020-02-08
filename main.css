@@ -60,3 +60,13 @@ footer {
     color: white;
     text-align: center;
 }
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 1000px) {
+    #hero {
+        height: 800px;
+    }
+}
