@@ -1,0 +1,62 @@
+body {
+    background-color: #333333;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:  #333333;
+    border-bottom: white solid 1px;
+}
+
+i {
+    color: white;
+    margin-right: 10px;
+    /* margin-top: 9px; */
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+nav p {
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: left;
+    color: white;
+}
+
+#hero {
+    background-color: white;
+    height: 600px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#about-me {
+    height: 300px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+
+#projects {
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+footer {
+    height: 40px;
+    color: white;
+    text-align: center;
+}
