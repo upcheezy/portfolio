@@ -5,9 +5,8 @@ body {
     padding: 0;
 }
 
-* {
-    padding: 0px;
-    margin: 0px
+body * {
+    box-sizing: border-box;
 }
 
 /* #map {
@@ -35,6 +34,7 @@ nav {
 main {
     font-family: 'Halant', serif;
     background-image: url('images/background_image.png');
+    border: green solid 2px;
 }
 
 i {
@@ -99,7 +99,7 @@ nav p {
     text-align: center;
     padding-top: 10px;
     padding: 0;
-    border: 0.25px solid black;
+    /* border: 2px solid black; */
 }
 
 #project-container h2 {
