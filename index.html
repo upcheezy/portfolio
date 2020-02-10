@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/c79911a95b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Halant|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 </head>
 
 <body>
-    <nav role='navigation'>
+    <nav role='navigation' class="nav-bar">
         <p>UpGeo</p>
         <i class="fas fa-bars"></i>
     </nav>
+
     <main role='main'>
         <section id='hero'>
-            Hi, I'm Matt. <br>
-            I am a fullstack developer & digital mapping enthusiast.
+            <p>
+                Hi, I'm Matt. <br>
+                I am a fullstack developer & digital mapping enthusiast.
+            </p>
         </section>
         <section id='about-me'>
             <h2>About me</h2>
@@ -31,7 +35,26 @@
                 spending time with my wife. I am also an old-time banjo player/enthusiast.
             </p>
         </section>
-        <section id='projects'>Projects</section>
+        <section id='project-container'>
+            <h2>Projects</h2>
+            <div class='project-space'>
+                <h3>Quiz App</h3>
+                <a href="https://upcheezy.github.io/quiz_app/"><img src="images/quizApp_resize.PNG"
+                        alt="quiz app thumbnail" height="250px"></a>
+                <p>This simple quiz application iterates through a series of ten questions, giving you feedback based on
+                    your selection. When you're through, you can start over from scratch to try and improve your score.
+                    This project showcases my ability to utilize JavaScript and jQuery to create simple, event-driven
+                    application.</p>
+            </div>
+            <div class='project-space'>
+                <h3>Nationwide Choropleth Population Map</h3>
+                <a href="https://upcheezy.github.io/total-us-pop_map/"><img src="images/totalPopMap_resize.PNG"
+                        alt="choropleth pop" height="250px"></a>
+                <p>This is a simple chloropleth map where I utilized some pre-processing with the Pandas, GeoPandas,
+                    Shapely, and MatPlotLib Python libraries. Then used Leaflet.js to display the result of that
+                    analysis.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <ul>
@@ -40,6 +63,9 @@
             <li><a href="https://github.com/upcheezy"><i class="fab fa-github-square"></i></a></li>
         </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
