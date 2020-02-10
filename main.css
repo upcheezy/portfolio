@@ -139,11 +139,26 @@ ul li a i {
 }
 
 @media screen and (min-width: 600px) {
-    
+    .project-space {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     #hero {
         height: 800px;
+        margin-left: 550px;
+        margin-right: 550px;
+    }
+
+    .project-space {
+        margin-left: 550px;
+        margin-right: 550px;
+    }
+
+    #about-me p {
+        margin-left: 250px;
+        margin-right: 250px;
     }
 }
