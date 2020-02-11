@@ -1,6 +1,6 @@
 body {
     /* background-color: white; */
-    
+
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body * {
 } */
 
 nav {
-    height: 40px;
+    height: 45px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -25,16 +25,37 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color:  #333333;
+    background-color: #333333;
     border-bottom: white solid 1px;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
 }
 
+nav ul {
+    display: none;
+}
+
+.nav-menu-popout {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 100px;
+    background-color: #333333;
+}
+
+.nav-menu-popout ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu-popout ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 main {
     font-family: 'Halant', serif;
     background-image: url('images/background_image.png');
-    border: green solid 2px;
+    /* border: green solid 2px; */
 }
 
 i {
@@ -54,12 +75,12 @@ nav p {
 }
 
 #hero {
-    height: 475px;
+    height: 650px;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
     line-height: 36px;
@@ -88,6 +109,7 @@ nav p {
 #about-me h2 {
     text-align: center;
     padding-bottom: 8px;
+    text-decoration: underline;
 }
 
 #about-me p {
@@ -98,27 +120,35 @@ nav p {
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
     padding-top: 10px;
-    padding: 0;
-    /* border: 2px solid black; */
+    padding-bottom: 10px;
+    border: 0.25px solid black;
 }
 
 #project-container h2 {
     color: white;
     padding-top: 10px;
+    /* border: purple solid 2px; */
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 .project-space {
     background-color: lightgray;
-    border: green solid 1px;
-    margin: 15px;
+    /* border: green solid 1px; */
+    margin: 15px 15px 0;
     border-radius: 5px;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     height: 50px;
     color: white;
     background-color: #333333;
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -130,6 +160,7 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    padding-left: 0;
 }
 
 ul li a i {
@@ -138,12 +169,126 @@ ul li a i {
     padding-right: 28px;
 }
 
+#matt {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
-    
+    #flex-container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .project-space {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 60px;
+    }
+
+    #hero {
+        font-size: 25px;
+    }
+
+    #about-me-container {
+        padding-left: 55px;
+        padding-right: 55px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    #about-me h2 {
+        font-size: 30px;
+    }
+
+    #project-container h2 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     #hero {
-        height: 800px;
+        height: 1000px;
+        font-size: 30px;
     }
+
+    #hero p {
+        margin-left: 550px;
+        margin-right: 500px;
+        margin-top: 100px;
+        line-height: 45px;
+    }
+
+    #matt {
+        display: initial;
+    }
+
+    nav {
+        height: 65px;
+    }
+
+    .nav-bar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .nav-bar i {
+        display: none;
+    }
+
+    #aboutmeNav {
+        padding-right: 55px;
+    }
+
+    #projectsNav {
+        padding-right: 55px;
+    }
+
+    #about-me h2 {
+        font-size: 50px;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #about-me-container p {
+        padding-top: 50px;
+        padding-left: 50px;
+        /* margin: 0px; */
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #about-me {
+        padding-bottom: 100px;
+    }
+
+    #flex-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .project-space {
+        width: 500px;
+    }
+
+    #project-container h2 {
+        font-size: 50px;
+    }
+
+    ul li a i {
+        font-size: 30px;
+        padding-left: 78px;
+        padding-right: 78px;
+    }
+
+    footer {
+        height: 75px
+    }
+
 }
