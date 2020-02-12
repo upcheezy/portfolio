@@ -64,7 +64,7 @@ i {
     cursor: pointer;
 }
 
-nav p {
+nav h1 {
     flex-grow: 1;
     flex-shrink: 0;
     text-align: left;
@@ -89,6 +89,7 @@ nav p {
     margin-left: 15px;
     margin-right: 15px;
     /* opacity: 0.8; */
+    margin: 0 auto;
 }
 
 #about-me {
@@ -170,6 +171,11 @@ ul li a i {
     display: none;
 }
 
+.tech-stack {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 @media screen and (min-width: 600px) {
     #flex-container {
         margin-left: 30px;
@@ -200,6 +206,11 @@ ul li a i {
     #project-container h2 {
         font-size: 30px;
     }
+
+    .tech-stack {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -208,11 +219,17 @@ ul li a i {
         font-size: 30px;
     }
 
+    .nav-menu-popout {
+        display: none;
+    }
+
     #hero p {
-        margin-left: 550px;
-        margin-right: 500px;
         margin-top: 100px;
+        /* margin-left: 400px; */
         line-height: 45px;
+        text-align: center;
+        min-width: 400px;
+        max-width: 700px;
     }
 
     nav p {
@@ -221,6 +238,7 @@ ul li a i {
 
     #matt {
         display: initial;
+        margin-top: 10px;
     }
 
     nav {
@@ -255,14 +273,13 @@ ul li a i {
     #about-me-container {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     #about-me-container p {
-        padding-top: 50px;
-        padding-left: 50px;
-        /* margin: 0px; */
         font-size: 25px;
         line-height: 40px;
+        margin-top: 0;
     }
 
     #about-me {
